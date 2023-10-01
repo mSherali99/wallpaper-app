@@ -10,6 +10,8 @@ abstract class ProductDao {
   @Query('SELECT * FROM ProductEntity')
   Future<List<ProductEntity>> getAllItems();
 
+
+
   @insert
   Future<void> addItem(ProductEntity floorEntity);
 
